@@ -1,0 +1,3 @@
+baseURL = "dat://bae0564cc164ee4cc59705c9e7d8eee25b26444780f86239783a8ec3282cbe90/"
+publishDir = "public-dat"
+
