@@ -7,9 +7,10 @@ disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
-    author = "Calin Tataru"
+    author = "Blueplane Research Group"
     description = "Blueplane"
     githubUsername = "blueplanelabs"
+    copyright = "&copy; 2019 Blueplane Research Group."
     accent = "blue"
     showBorder = true
     backgroundColor = "white"
@@ -17,6 +18,7 @@ googleAnalytics = ""
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    
 
 [[menu.main]]
     url = "/"
