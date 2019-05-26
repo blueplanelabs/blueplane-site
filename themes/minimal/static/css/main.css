@@ -86,7 +86,7 @@ body {
 }
 
 .logo {text-align: center; width: 35em;}
-.logo img {width: 100%; max-width: 520px;}
+.logo img {width: 100%; max-width: 320px;}
 .container {
     display: flex;
     flex-direction: column;
