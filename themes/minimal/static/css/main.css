@@ -1,100 +1,234 @@
-html, body {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+
+body {
+    font-family: Fira sans,sans-serif;
+    font-weight: 200;
+    color: #fff;  
+    font-size: 1.25em;
+
+}
+
+.logo {text-align: center; width: 35em;}
+.logo img {width: 100%; max-width: 520px;}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    min-height: 100vh;     
+    width: 100%;
+    z-index: 1;
+    background-size: cover;
+    width: calc(100% - 2em);
+    padding: 1em;
+}
+
+.container::before {
+    content: "";
+   background-image:
+    radial-gradient(#0a0a0012, #000000b8);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
     height: 100%;
 }
 
-body {
-    padding-top: 55px;
+header, main, footer {z-index: 3}
+
+
+main h2 {
+    text-transform: uppercase;
+    margin: 3rem auto 2rem;
+}
+ main .content {  margin-top: 3rem;  }
+ main h2 + .content {margin-top: 0;}
+.Landing p { line-height: 1.5em;}
+.footer {
+    /*color: #ED6842;*/
+    font-size: 0.75em;
+    color: #ffffffc2;
+    margin-bottom: 80px;
+}
+.footer p a {/*color:#009FE3;*/color: #fff; text-transform: uppercase; font-weight: 400;}
+
+
+.social .github a::before {
+    content: url("/images/ico-github.svg");
+    display: inline-block;
+    width: 32px;
+    top: 8px;
+    position: relative;
+}
+.social .mail a::before {
+    content: url("/images/ico-mail.svg");
+    display: inline-block;
+    width: 32px;
+    top: 5px;
+    position: relative;
+}
+.social .twitter a::before {
+    content: url("/images/ico-twitter.svg");
+    display: inline-block;
+    width: 32px;
+    top: 11px;
+    position: relative;
+}
+.social {
+    text-align: center; 
     display: flex;
-    text-align: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
-main {
-    margin: auto;
-    padding: 25px;
-    flex: 1 0 auto;
-    max-width: 750px;
+
+.social li {
+    display: inline-block;
+    margin: 1em 0.5em;
+}
+.social li a {
+    width: 70px;
+    height: 50px;
+    background: #ffffff29;
+    display: block;
+    border: 1px solid #ffffff2b;
+    border-radius: 4px;
+    box-shadow: 4px 10px 5px -9px rgba(0, 0, 0, 0.29);
+}
+.social li a:hover {
+    background:#ffffff3d;
+    box-shadow: 4px 13px 5px -9px rgba(0, 0, 0, 0.29);
+}
+.social li a span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+nav .st0 {fill:#fff;}
+
+@media screen and (max-width: 480px) {
+    .container, nav {
+        background-image:  url("/images/canyon-mb.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    nav { 
+        position: fixed; 
+        width: 100%; 
+        left: 0;
+        bottom: 0;
+    }
+    .mobile {display: initial;}
+    .desktop {display: none;}
+    .footer {
+        margin-top: 80px;
+    }
 }
 
-/*footer*/
+@media screen and (min-width: 481px) {
+    main .content {
+     display: grid; 
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     max-width: 1200px;
+     grid-gap: 2rem;  
+    } 
+    .container {
+        background-image:  url("/images/canyon.jpg");
+        width: calc(100% - 4em);
+        padding: 2em;
+    }
 
-.copyright {
-    margin: 15px 0;
-}
+    .social {
+        border-bottom: 1px solid #ffffff80; 
+        margin-bottom: 2em;
+        padding-top: 2em;
+    }
+    .mobile {display: none;}
+    .desktop {display: initial;}
+    main h2 {
+        font-size: 2em;
+        text-align: center;
+    }
 
-/*home page*/
-
-.intro {
-    transform: translateY(22vh);
-}
-
-.intro > h1 {
-    color: #212121;
-    font-size: 12vh;
-}
-
-.intro > h2 {
-    color: #757575;
-    font-size: 3vmin;
-}
-
-.intro > .profile {
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
-}
-
-/*apply accent colour to links*/
-
-a:link, a:visited {
-    color: var(--accent);
-}
-
-a.icon:hover {
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent) !important;
-}
-
-/*paginator at bottom of list view*/
-
-.pages {
-    padding: 15px 0;
-}
-
-.pages-icon {
-    padding: 0 15px;
-}
-
-/*list item for posts and projects*/
-
-.item {
-    padding: 10px 0;
-}
-
-.item-tag {
-    background-color: var(--accent);
-}
-
-/*navigation bar icons*/
-
-.navbar-icon {
-    font-size: 125%;
-    display: inline-block !important;
-}
-
-/*coloured borders at top and bottom of the page*/
-
-.navbar.navbar-default {
-    border-top: var(--border-width) solid var(--accent);
-}
-
-footer {
-    border-bottom: var(--border-width) solid var(--accent);
-}
-
-img {
-    max-width: 100%;
 }

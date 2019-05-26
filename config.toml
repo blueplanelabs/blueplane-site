@@ -1,21 +1,21 @@
 baseURL = "https://blueplane.xyz/"
 publishDir = "public"
 languageCode = "en-us"
-title = "Blueplane"
+title = "Blue Plane Research Group"
 theme = "minimal"
 disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
 
 
 [params]
-    author = "Blueplane Research Group"
-    description = "Blueplane"
+    author = "Blue Plane Research Group"
+    description = "Blue Plane Description"
     githubUsername = "blueplanelabs"
-    copyright = "&copy; 2019 Blueplane Research Group."
+    copyright = "&copy; 2019 Blue Plane Research Group."
     accent = "blue"
     showBorder = true
     backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
+    font = "Fire+Sans:200,400" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]

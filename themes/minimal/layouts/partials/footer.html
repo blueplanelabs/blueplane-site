@@ -1,10 +1,16 @@
-        <footer>
+    <footer class="footer">
+         <nav>
+            <ul class="social">
+                <li class="mail"><a href=mailto:blueplane@osoco.es><span>Mail</span></a></li>
+                <li class="github"><a href=https://github.com/blueplanelabs/><span>GitHub</span></a></li>
+                <li class="twitter"n><a href=https://twitter.com/blueplanelabs/><span>Twitter</span></a></li>
+            </ul>
+        </nav>
+        <p class="copyright">This site is built with <a href="https://gohugo.io">Hugo</a> and published via web and p2p with the <a href=https://dat.foundation/>dat://</a> protocol. You can access it via the next-generation, peer-to-peer Web at <a href=dat://blueplane.xyz>dat://blueplane.xyz</a>. Photo by <span class="mobile"><a href="https://unsplash.com/photos/r5d_dVc8SE8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Vargas</a> on <a href="https://unsplash.com/photos/-fYdkIEJ0LQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span><span class="desktop"><a href="https://unsplash.com/photos/r5d_dVc8SE8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ashim D’Silva</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>.</p>
+        <p class="copyright">&copy; 2019 Blueplane Research Group.</p>
+    </footer>
+</div>
 
-	    <p class="copyright">{{ "This site is built with [Hugo](https://gohugo.io) and published with via the HTTPS and [dat://](https://dat.foundation/) protocols. You can access it via the next-generation peer-to-peer Web at [dat://blueplane.xyz](dat://blueplane.xyz) using the [Beaker browser](https://beakerbrowser.com/)." | markdownify }}</p>
-            <p class="copyright text-muted">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Minimal](https://github.com/calintat/minimal)" | markdownify }}</p>
-
-        </footer>
-       
-    </body>
+</body>
 
 </html>
