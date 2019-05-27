@@ -85,8 +85,8 @@ body {
 
 }
 
-.logo {text-align: center; width: 35em;}
-.logo img {width: 100%; max-width: 320px;}
+.logo {text-align: center; }
+.logo img {max-width: 320px;}
 .container {
     display: flex;
     flex-direction: column;
