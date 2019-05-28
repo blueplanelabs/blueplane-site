@@ -24,13 +24,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a { color: #fff; }
+
+strong { font-weight: 600; }
+
+ul { list-style: disc; }
 
 body {
 	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
 }
 
 blockquote, q {
