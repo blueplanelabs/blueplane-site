@@ -24,14 +24,13 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-a { color: #fff; }
-
-strong { font-weight: 600; }
-
-ul { list-style: disc; }
 
 body {
 	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
 }
 
 blockquote, q {
@@ -80,14 +79,16 @@ img {
 
 body {
     font-family: Fira sans,sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: #fff;  
     font-size: 1.25em;
-
+    -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
+strong {font-weight: 600;}
 
-.logo {text-align: center; }
-.logo img {max-width: 320px;}
+.logo { text-align: center }
+.logo img { max-width: 320px; }
 .container {
     display: flex;
     flex-direction: column;
@@ -120,11 +121,28 @@ main h2 {
     margin: 3rem auto 2rem;
 }
  main .content {  margin-top: 3rem;  }
+ main .content a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    margin: 0 2px;
+}
+ main .content a:hover { border-bottom: 2px solid;}
+
  main h2 + .content {margin-top: 0;}
+
+main .content + h2 {
+    border-top: 1px dotted #ffffff8c;
+    padding-top: 2rem;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
 .Landing p { line-height: 1.5em;}
 .footer {
     /*color: #ED6842;*/
-    font-size: 0.75em;
+    font-size: 0.85em;
     color: #ffffffc2;
     margin-bottom: 80px;
 }
@@ -229,7 +247,5 @@ nav .st0 {fill:#fff;}
     .desktop {display: initial;}
     main h2 {
         font-size: 2em;
-        text-align: center;
     }
-
 }
