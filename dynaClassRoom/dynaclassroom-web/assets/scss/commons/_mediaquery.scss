@@ -1,0 +1,21 @@
+// MEDIAQUERY
+// ---------
+// @include media-min( $min-L ){ ... }
+// @include media-max( $max-S ){ ... }
+
+	$min-S : 600px;
+	$min-M : 768px;
+	$min-L : 1200px;
+	$min-XL : 1280px;
+
+	$max-S : 599px;
+	$max-M : 899px;
+	$max-L : 1199px;
+	$max-XL : 1279px;
+
+@mixin media-min($min-size) {
+	@media (min-width: $min-size) { @content; }
+}
+@mixin media-max($max-size) {
+	@media (max-width: $max-size) { @content; }
+}

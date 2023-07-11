@@ -1,0 +1,27 @@
+.ooo-welcome{
+    background: linear-gradient(0deg, rgba(231,69,120,1) 50%, rgba(250,205,96,0.20214023109243695) 66%), url(../img/welcome-s.jpg) center no-repeat;
+    background-size: cover;
+    @include media-min( $min-M ){ 
+        background: linear-gradient(-90deg, rgba(231,69,120,1) 50%, rgba(250,205,96,0.20214023109243695) 66%), url(../img/welcome.jpg) center no-repeat;
+        background-size: cover;
+    }
+    color: var(--colorW);
+    .ooo-content > div{
+        @include media-min( $min-M ){ 
+            max-width: 45%;
+            margin-left: auto;
+            padding-top: calc(3*var(--padding));
+            padding-bottom: calc(3*var(--padding));
+        }
+        padding-top: 20vh;
+        padding-bottom: var(--padding);
+        text-shadow: 2px 2px 5px var(--color-03);
+    }
+    q{
+        @extend h2;
+    }
+    .ooo-signature{
+        text-align: right;
+        font-size: clamp(14px, 2vw, 20px);
+    }
+}

@@ -1,0 +1,109 @@
+// Reset CSS
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+  line-height: var(--line-height);
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}

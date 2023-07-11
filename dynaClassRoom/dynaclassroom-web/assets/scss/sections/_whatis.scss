@@ -1,0 +1,32 @@
+.ooo-what-is{
+    display: flex;
+    flex-direction: column;
+    @include media-min( $min-M ){ 
+        flex-direction: row;
+    }
+    > * {
+        width: 50%;
+    }
+    &::after{
+        display: block;
+        content: "";
+        text-align: center;
+        width: 100%;
+        background: url(../img/whatis.png) no-repeat center, var(--color-01);
+        background-size: contain;
+        min-height: 50vh;
+        max-height: 100vw;
+    }
+    .ooo-content{
+        h2{
+            color: var(--color-01);
+        }
+        @include media-min( $min-M ){ 
+            margin-right: 0;
+        }
+        div{
+            padding: var(--padding) 0 ;
+        }
+
+    }
+}

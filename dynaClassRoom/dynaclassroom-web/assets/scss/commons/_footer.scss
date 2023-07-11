@@ -1,0 +1,9 @@
+footer{
+    display:flex;
+    gap: var(--padding);
+    padding: var(--padding);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-min);
+    img{max-width: 50%;}
+}

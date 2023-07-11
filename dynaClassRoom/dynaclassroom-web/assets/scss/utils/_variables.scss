@@ -1,0 +1,32 @@
+:root{
+
+// 01 - COLORS
+// 02 - FONTS
+// 03 - GENERIC MEASURES
+// -------------------------------------------
+// 01 - COLORS
+    --color-01:                     #1AC0C6;
+    --color-012:                    #48CDD1;
+    --color-02:                     #FB7756;
+    --color-03:                     #E74578;
+    --color-04:                     #FACD60;
+    --color-05:                     #FDFA66;
+
+    --color-min:                    #FFDB00;
+
+    --colorW:                       #FFF;
+    --color-bg-01:                  #F2F2F2;
+    
+    --color-text:                  #141414;
+
+// 02 - FONTS
+    --font-size-base:               16px;
+    --font-title:                   "gfs_didotregular", times, georgia;
+    --font-regular:                 "roboto_regular";
+    --font-medium:                  "roboto_medium";
+    --font-bold:                    "roboto_bold";
+
+// 03 - GENERIC MEASURES
+    --padding:                      clamp(30px, 4vw, 60px);
+    --border-radius:                4px;
+}

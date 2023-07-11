@@ -1,0 +1,21 @@
+.ooo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorW);
+    padding: 10px var(--padding);
+    min-height: 50px;
+    // @include media-min( $min-M ){
+    //     padding: var(--padding);
+    // }
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    .ooo-logo svg{
+        width: 60px;
+        @include media-min( $min-M ){ 
+            width: 146px;
+        }
+    }
+}

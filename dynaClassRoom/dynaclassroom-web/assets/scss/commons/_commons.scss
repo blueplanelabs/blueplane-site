@@ -1,0 +1,47 @@
+// 00 - IMPORT
+// 01 - PRINCIPAL
+// -----------------
+
+// 00 - IMPORT
+@import "mediaquery";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "menu";
+
+// 01 - PRINCIPAL
+body{
+  background-color: var(--color-bg-01);
+  color: var(--color-text);
+  font-size: clamp(16px, 2vw, 25px);
+  font-family: var(--font-regular);
+}
+main{
+  padding-top: 50px;
+  @include media-min( $min-M ){ 
+    padding-top: 100px;
+  }
+  h2{
+    margin: 0;
+    padding-bottom: .5em;
+    font-family: var(--font-title);
+    font-size: clamp(30px, 3vw, 60px);
+    line-height: 1.2em;
+    display: block;
+  }
+  img{max-width: 100%;}
+  .ooo-content{
+    width: 100%;
+    // max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+}
+.st-hidden{
+  opacity: 0;
+  position: absolute;
+  text-indent:-999em;
+  clip: rect(0, 0, 0, 0);
+}
