@@ -2,6 +2,7 @@
 title: "DynaClassroom"
 weight: 1
 draft: false
+url: "/dynaclassroom"
 ---
 
 <main>
