@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {{ partial "head-open" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ hugo.Generator }}
+
+    <link href="assets/css/style.css" rel="stylesheet" media="all" type="text/css">
+    <title>{{ .Title  }}</title>
+
+    {{ if .Site.Params.favicon }}
+    <link rel="icon" href="{{ .Site.Params.favicon | absURL | safeURL }}">
+    {{ end }}
+
+    {{ partial "project-css" . }}
+    {{ partial "project-js" . }}
+
+    {{ if .Site.GoogleAnalytics }}
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', '{{ .Site.GoogleAnalytics }}');
+    </script>
+    {{ end }}
+</head>
+
+<body>
+    <header class="ooo-header">
+        <div class="ooo-logo">{{ partial "project-logo" . }}</div>
+        <h1 class="st-hidden">{{ .Title  }}</h1>
+        <div class="ooo-burger"><span></span></div>
+        <div class="ooo-menu">
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Bienvenida</a></li>
+                    <li><a href="#what">¿Qué es DynaClassroom?</a></li>
+                    <li><a href="#motivations">Motivaciones</a></li>
+                    <li><a href="#objectives">Objetivos</a></li>
+                </ul>
+                contacto: <a href="mailto:dynaclassroom@osoco.es" target="_blank">dynaclassroom@osoco.es</a>
+            </nav>
+        </div>
+    </header>
