@@ -305,13 +305,13 @@ main .ooo-content {
 }
 
 .ooo-welcome {
-  background: linear-gradient(0deg, rgb(231, 69, 120) 50%, rgba(250, 205, 96, 0.2021402311) 66%), url(../img/welcome-s.jpg) center no-repeat;
+  background: linear-gradient(0deg, rgb(231, 69, 120) 50%, rgba(250, 205, 96, 0.2021402311) 66%), url(../images/welcome-s.jpg) center no-repeat;
   background-size: cover;
   color: var(--colorW);
 }
 @media (min-width: 768px) {
   .ooo-welcome {
-    background: linear-gradient(-90deg, rgb(231, 69, 120) 50%, rgba(250, 205, 96, 0.2021402311) 66%), url(../img/welcome.jpg) center no-repeat;
+    background: linear-gradient(-90deg, rgb(231, 69, 120) 50%, rgba(250, 205, 96, 0.2021402311) 66%), url(../images/welcome.jpg) center no-repeat;
     background-size: cover;
   }
 }
@@ -350,7 +350,7 @@ main .ooo-content {
   content: "";
   text-align: center;
   width: 100%;
-  background: url(../img/whatis.png) no-repeat center, var(--color-01);
+  background: url(../images/whatis.png) no-repeat center, var(--color-01);
   background-size: contain;
   min-height: 50vh;
   max-height: 100vw;
@@ -371,7 +371,7 @@ main .ooo-content {
   background-color: var(--color-04);
   padding-top: var(--padding);
   padding-bottom: var(--padding);
-  background-image: url(../img/hexagonos.svg);
+  background-image: url(../images/hexagonos.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -391,7 +391,7 @@ main .ooo-content {
 .ooo-objectives {
   padding-top: var(--padding);
   background-color: var(--color-012);
-  background-image: url(../img/hexagonos.svg);
+  background-image: url(../images/hexagonos.svg);
   background-repeat: no-repeat;
 }
 .ooo-objectives h2, .ooo-objectives .ooo-welcome q, .ooo-welcome .ooo-objectives q {
