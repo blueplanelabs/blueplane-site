@@ -444,8 +444,12 @@ main .ooo-content {
   background-image: url(../images/hexagonos.svg);
   background-repeat: no-repeat;
 }
-.ooo-publications h2, .ooo-publications a{
+.ooo-publications h2{
   color: var(--colorW);
+}
+.ooo-publications a{
+  color: var(--color-03);
+  text-decoration: none;
 }
 .ooo-publications ol {
   display: flex;
