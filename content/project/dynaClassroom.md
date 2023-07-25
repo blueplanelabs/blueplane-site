@@ -51,9 +51,9 @@ url: "/dynaclassroom"
             <div class="ooo-content">
                 <h2>Publicaciones</h2>
                 <ol>
-                    <li><a href="https://osoco.es/thoughts/2023/04/co-designing-dynaclassroom-with-children-part-1/" target="_blank">Co-designing DynaClassroom with Children - Part 1: The concept of participatory design</a></li>
-                    <li><a href="https://osoco.es/thoughts/2023/07/co-designing-dynaclassroom-with-children-part-2/" target="_blank">Co-designing DynaClassroom with Children - Part 2: Case study</a></li>
-                    <li><a href="https://osoco.es/thoughts/2023/07/co-designing-dynaclassroom-with-children-part-3/" target="_blank">Co-designing DynaClassroom with Children - Part 3: Workshop outcomes and analysis process</a></li>
+                    <li><a href="https://osoco.es/thoughts/2023/04/co-designing-dynaclassroom-with-children-part-1/" target="_blank">Co-designing DynaClassroom with Children <strong>Part 1: The concept of participatory design</strong></a></li>
+                    <li><a href="https://osoco.es/thoughts/2023/07/co-designing-dynaclassroom-with-children-part-2/" target="_blank">Co-designing DynaClassroom with Children <strong>Part 2: Case study</strong></a></li>
+                    <li><a href="https://osoco.es/thoughts/2023/07/co-designing-dynaclassroom-with-children-part-3/" target="_blank">Co-designing DynaClassroom with Children <strong>Part 3: Workshop outcomes and analysis process</strong></a></li>
                 </ol>
             </div>
         </section>
