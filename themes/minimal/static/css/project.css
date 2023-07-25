@@ -447,7 +447,7 @@ main .ooo-content {
 .ooo-publications h2, .ooo-publications a{
   color: var(--colorW);
 }
-.ooo-objectives ol {
+.ooo-publications ol {
   display: flex;
   justify-content: center;
   gap: calc(var(--padding) + 1em) var(--padding);
@@ -455,7 +455,7 @@ main .ooo-content {
   padding: var(--padding) 0;
   counter-increment: 1;
 }
-.ooo-objectives ol li {
+.ooo-publications ol li {
   color: var(--color-03);
   width: 100%;
   position: relative;
@@ -465,7 +465,7 @@ main .ooo-content {
   border-radius: var(--border-radius-b);
 }
 @media (min-width: 768px) {
-  .ooo-objectives ol li {
+  .ooo-publications ol li {
     max-width: 320px;
   }
 }
