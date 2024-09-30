@@ -82,6 +82,14 @@ video {
   text-size-adjust: none;
 }
 
+div {
+  margin: 1em 0;
+}
+
+em {
+  font-style: italic;
+}
+
 h1 {
   font-size: 40px;
   font-weight: normal;
